@@ -101,3 +101,88 @@
 
 # n = friends.index("emily")
 # n2 = friends.index("emily", n + 1)
+
+
+# 21.02.2023 lesson
+
+# 1
+# input_list = [1, 2, 3, 4, 4, 5, 6, 6, 7, 7]
+
+# output_set = set()
+
+# for var in input_list:
+#     if var % 2 == 0:
+#         output_set.add(var)
+
+# print(output_set)
+
+# 2
+
+# input_list = [1, 2, 3, 4, 4, 5, 6, 7, 7]
+# set_using_comp = {var for var in input_list if var % 2 == 0}
+# print(set_using_comp)
+
+# 3
+# tags = {"Django", "Pandas", "Numpy"}
+
+# lowecase_tags = set()
+# for tag in tags:
+#     lowecase_tags.add(tag.lower())
+
+# print(lowecase_tags)
+
+# 4
+# tags = {"Django", "Pandas", "Numpy"}
+# lowercase_tags = set(map(lambda tag: tag.lower(), tags))
+# print(lowercase_tags)
+
+# 5
+# tags = {"Django", "Pandas", "Numpy"}
+# lowercase_tags = {tag.lower() for tag in tags}
+# print(lowercase_tags)
+
+# 6
+
+# tags = {"Django", "Pandas", "Numpy"}
+
+# new_tags = {tag.lower() for tag in tags if tag != "Numpy"}
+# print(new_tags)
+
+
+# questions
+# 1
+
+# s = {1, 2, 3}
+# t = {1, 2, 3, 4, 5}
+
+# if s.issubset(t) and s != t:
+#     print("s is a proper subset of t")
+# else:
+#     print("s is not a proper subset of t")
+
+
+# 2
+# s = {"apple", "banana", "cherry", "orange"}
+# t = {"banana", "kiwi", "orange", "strawberry"}
+
+# common_strings = s.intersection(t)
+
+# for string in common_strings:
+#     print(string)
+
+
+# 3
+
+# s = {"apple", "banana", "orange", "kiwi"}
+# t = {"orange", "pear", "grape"}
+
+# for string in s - t:
+#     print(string)
+
+# 4
+s = set()
+for i in range(1, 5):
+    s.add(i * i)
+    s.add(-i)
+
+print(s)
