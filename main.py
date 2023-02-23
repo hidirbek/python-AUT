@@ -180,9 +180,75 @@
 #     print(string)
 
 # 4
-s = set()
-for i in range(1, 5):
-    s.add(i * i)
-    s.add(-i)
+# s = set()
+# for i in range(1, 5):
+#     s.add(i * i)
+#     s.add(-i)
 
-print(s)
+# print(s)
+
+# 23.02.2023
+
+# input_list = [1, 2, 3, 4, 4, 5, 6, 7, 7]
+# output_gen = (var for var in input_list if var % 2 == 0)
+# print(end="")
+
+# for var in output_gen:
+#     print(var, end="")
+
+# import contextlib
+
+
+# @contextlib.contextmanager
+# def make_context():
+#     print("entering")
+#     try:
+#         yield {}
+#     except RuntimeError as err:
+#         print("ERROR:", err)
+#     finally:
+#         print("exiting")
+
+
+# print("normal:")
+# with make_context() as value:
+#     print("inside with statement:", value)
+# print("\nHandled error:")
+# with make_context() as value:
+#     raise RuntimeError("showing example")
+# print("\nUNhandled error:")
+# with make_context() as value:
+#     raise ValueError("this exception is not handled")
+
+
+# import contextlib
+
+
+# @contextlib.contextmanager
+# def make_context():
+#     print("entering")
+#     try:
+#         yield
+#     except RuntimeError as err:
+#         print("error:", err)
+#     finally:
+#         print("exiting")
+
+
+# @make_context()
+# def normal():
+#     print("inside with statement")
+
+
+# @make_context()
+# def throw_error(err):
+#     raise err
+
+
+# print("normal:")
+# normal()
+# print("\nhandled error:")
+# throw_error(RuntimeError("showing example"))
+# print("\nunhandled errror")
+# print("\nunhanled error")
+# throw_error(ValueError("this exception is not handled"))
