@@ -252,3 +252,94 @@
 # print("\nunhandled errror")
 # print("\nunhanled error")
 # throw_error(ValueError("this exception is not handled"))
+
+# 28.02.2023
+# def double(num):
+#   return num*2;
+
+# my_double = double(4)
+# print(my_double)
+# print(double)
+
+
+# def plusOne(number):
+#   return number+1
+
+
+# def plusTwo(number):
+#   return number+2
+
+
+# def plusThree(number):
+#   return number+3
+
+
+# def plusFour(number):
+#   return number+4
+
+# func_list = [plusOne,plusTwo,plusThree, plusFour]
+
+# for func in func_list:
+#   print(func(10))
+
+
+# def cube(number):
+#     return number * number * number
+
+
+# def my_map(func, arg_list):
+#     result = []
+#     for i in arg_list:
+#         result.append(func(i))
+#     return result
+
+
+# squares = my_map(cube, [1, 2, 3, 4, 5])
+
+# print(squares)
+
+
+# def shout(text):
+#     return text.upper()
+
+
+# def whisper(text):
+#     return text.lower()
+
+
+# def greet(func):
+#     greeting = func("hi there")
+#     print(greeting)
+
+
+# greet(whisper)
+
+# 3
+
+# def logger(msg):
+#     def log_message():
+#         print("Log:", msg)
+
+#     return log_message
+
+
+# loh_hi = logger("Hi!")
+# loh_hi()
+
+
+def plusOne(number):
+    return number + 1
+
+
+def plusTwo(number):
+    return number + 2
+
+
+def listModifier(li, func):
+    result = []
+    for el in li:
+        result.append(func(el))
+    return result
+
+
+print(listModifier([1, 2, 3, 4, 5], plusTwo))
